@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  StoryPageView.swift
 //  MyStory
 //
 //  88                                                     88              88                                     
@@ -19,20 +19,35 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct StoryPageView: View {
+    let story: Story
+    let pageIndex: Int
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            ScrollView {
+                Text(story[pageIndex].text)
+            }
+            
+            ForEach(story[pageIndex].choices, id: \Choice.text) { choice in
+                NavigationLink(destination: StoryPageView(story: story, pageIndex: choice.destination)) {
+                    Text(choice.text)
+                        .multilineTextAlignment(.leading)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding()
+                        .background(Color.gray.opacity(0.25))
+                        .cornerRadius(8)
+                }
+            }
         }
         .padding()
+        .navigationTitle("Page \(pageIndex + 1)")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct StoryPageView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        StoryPageView(story: story, pageIndex: 8)
     }
 }

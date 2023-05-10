@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		848C072E2A0C081F0038BF03 /* MyStoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C072D2A0C081F0038BF03 /* MyStoryApp.swift */; };
-		848C07302A0C081F0038BF03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C072F2A0C081F0038BF03 /* ContentView.swift */; };
+		848C072E2A0C081F0038BF03 /* StoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C072D2A0C081F0038BF03 /* StoryApp.swift */; };
 		848C07322A0C081F0038BF03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848C07312A0C081F0038BF03 /* Assets.xcassets */; };
 		848C07352A0C081F0038BF03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848C07342A0C081F0038BF03 /* Preview Assets.xcassets */; };
 		848C073F2A0C08200038BF03 /* MyStoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C073E2A0C08200038BF03 /* MyStoryTests.swift */; };
 		848C07492A0C08200038BF03 /* MyStoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C07482A0C08200038BF03 /* MyStoryUITests.swift */; };
 		848C074B2A0C08200038BF03 /* MyStoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C074A2A0C08200038BF03 /* MyStoryUITestsLaunchTests.swift */; };
+		848C07582A0C092C0038BF03 /* StoryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C07572A0C092C0038BF03 /* StoryModels.swift */; };
+		848C075A2A0C09EF0038BF03 /* MyStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C07592A0C09EF0038BF03 /* MyStory.swift */; };
+		848C075C2A0C0A3C0038BF03 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C075B2A0C0A3C0038BF03 /* StoryView.swift */; };
+		848C075E2A0C0A570038BF03 /* StoryPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C075D2A0C0A570038BF03 /* StoryPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +38,7 @@
 
 /* Begin PBXFileReference section */
 		848C072A2A0C081F0038BF03 /* MyStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		848C072D2A0C081F0038BF03 /* MyStoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStoryApp.swift; sourceTree = "<group>"; };
-		848C072F2A0C081F0038BF03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		848C072D2A0C081F0038BF03 /* StoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryApp.swift; sourceTree = "<group>"; };
 		848C07312A0C081F0038BF03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		848C07342A0C081F0038BF03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		848C073A2A0C08200038BF03 /* MyStoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyStoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,10 @@
 		848C07442A0C08200038BF03 /* MyStoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyStoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		848C07482A0C08200038BF03 /* MyStoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStoryUITests.swift; sourceTree = "<group>"; };
 		848C074A2A0C08200038BF03 /* MyStoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		848C07572A0C092C0038BF03 /* StoryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModels.swift; sourceTree = "<group>"; };
+		848C07592A0C09EF0038BF03 /* MyStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStory.swift; sourceTree = "<group>"; };
+		848C075B2A0C0A3C0038BF03 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		848C075D2A0C0A570038BF03 /* StoryPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,11 @@
 		848C072C2A0C081F0038BF03 /* MyStory */ = {
 			isa = PBXGroup;
 			children = (
-				848C072D2A0C081F0038BF03 /* MyStoryApp.swift */,
-				848C072F2A0C081F0038BF03 /* ContentView.swift */,
+				848C07592A0C09EF0038BF03 /* MyStory.swift */,
+				848C07572A0C092C0038BF03 /* StoryModels.swift */,
+				848C072D2A0C081F0038BF03 /* StoryApp.swift */,
+				848C075B2A0C0A3C0038BF03 /* StoryView.swift */,
+				848C075D2A0C0A570038BF03 /* StoryPageView.swift */,
 				848C07312A0C081F0038BF03 /* Assets.xcassets */,
 				848C07332A0C081F0038BF03 /* Preview Content */,
 			);
@@ -257,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848C07302A0C081F0038BF03 /* ContentView.swift in Sources */,
-				848C072E2A0C081F0038BF03 /* MyStoryApp.swift in Sources */,
+				848C075C2A0C0A3C0038BF03 /* StoryView.swift in Sources */,
+				848C075E2A0C0A570038BF03 /* StoryPageView.swift in Sources */,
+				848C07582A0C092C0038BF03 /* StoryModels.swift in Sources */,
+				848C072E2A0C081F0038BF03 /* StoryApp.swift in Sources */,
+				848C075A2A0C09EF0038BF03 /* MyStory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +431,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MyStory/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "My Story";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +460,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MyStory/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "My Story";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
